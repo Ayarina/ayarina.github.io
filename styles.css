@@ -1,1 +1,15 @@
 
+
+body{ 
+    background-image:url(pokemongif.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(110, 91, 216, 0.733);
+    background-blend-mode:luminosity, multiply;
+} 
+
+h1{
+    color:rgb(218, 127, 127);
+    
+}
