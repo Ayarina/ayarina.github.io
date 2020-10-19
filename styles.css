@@ -1,15 +1,48 @@
 
 
+
+/*{
+    margin: 0px;
+
+}*/
+
+/* :focus */
+
 body{ 
+
+    /* Background Image Characteristics */
     background-image:url(pokemongif.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: rgba(110, 91, 216, 0.733);
     background-blend-mode:luminosity, multiply;
+    
+    /* Margen de la página */
+    margin-left: 160px;
+    margin-right: 160px;
 } 
 
 h1{
-    color:rgb(218, 127, 127);
-    
+
+    /* Title */
+    font-family:monospace;
+    font-size: 30px;
+    color:#fadcaa;
+    text-align: center;
+
+    /*Caja*/
+    background-color: #794c74;
+    width: 500px;
+    border-color: #8a5183c5;
+    border-width: 8px;
+    border-style: solid;
+    padding: 30px;
+    margin: auto;
+}
+
+.footer
+{
+    position: fixed;
+    background-color: black;
 }
