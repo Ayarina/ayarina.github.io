@@ -1,13 +1,4 @@
 
-
-
-/*{
-    margin: 0px;
-
-}*/
-
-/* :focus */
-
 body{ 
 
     /* Background Image Characteristics */
@@ -19,18 +10,16 @@ body{
     background-blend-mode:luminosity, multiply;
     
     /* Margen de la página */
-    margin-left: 160px;
-    margin-right: 160px;
+    /*margin-left: 160px;
+    margin-right: 160px;*/
 } 
 
 h1{
-
     /* Title */
     font-family:monospace;
     font-size: 30px;
     color:#fadcaa;
     text-align: center;
-
     /*Caja*/
     background-color: #794c74;
     width: 500px;
@@ -41,8 +30,66 @@ h1{
     margin: auto;
 }
 
-.footer
+footer
 {
     position: fixed;
-    background-color: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    padding-top: 55px;
+    border: 15px solid green;
+    
+}
+
+.footer-left{
+    width: 20%;
+    background-color: yellow;
+}
+.footer-center{
+    border:15px solid green;
+    background-color: red;
+    text-align: left;
+    width: 35%;
+}
+.footer-right{
+    padding-bottom: 50px;
+    background-color: cadetblue;
+    width: 45%;
+    text-align: left;
+    font-size: 25px;
+    
+}
+
+.footerlinks{
+
+    display: inline-block;
+    color: #fadcaa;
+    text-decoration: none;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fadcaa;
+    text-decoration: none;
+}
+  
+a:hover {
+    
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+ul{
+
+    list-style-position: unset;
 }
