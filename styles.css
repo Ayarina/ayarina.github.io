@@ -1,6 +1,12 @@
 
-body{ 
 
+:root{
+    --colorTema:#fadcaa;
+    --colorSecundario: #8a5183c5;
+    --colorTexto: #f5f5f5 ;
+}
+
+body{ 
     /* Background Image Characteristics */
     background-image:url(pokemongif.gif);
     background-repeat: no-repeat;
@@ -9,16 +15,22 @@ body{
     background-color: rgba(110, 91, 216, 0.733);
     background-blend-mode:luminosity, multiply;
     
-    /* Margen de la página */
-    /*margin-left: 160px;
-    margin-right: 160px;*/
+    /*Fixed footer shit*/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
 } 
 
-h1{
+main {
+    flex: 1 0 auto;
+}
+
+.title{
     /* Title */
     font-family:monospace;
     font-size: 30px;
-    color:#fadcaa;
+    color: var(--colorTema);
     text-align: center;
     /*Caja*/
     background-color: #794c74;
@@ -27,72 +39,137 @@ h1{
     border-width: 8px;
     border-style: solid;
     padding: 30px;
-    margin: auto;
+    margin:auto;
+    margin-top: 1em;
 }
 
-footer
-{
+/* Mierda de footer */
+/*
+footer{
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: blueviolet;
+    background-color: #794c74;
     width: 100%;
     display: flex;
-    padding-top: 55px;
-    border: 15px solid green;
-    
+    border: 15px solid #794c74;
+    padding-top: 10px;
 }
 
 .footer-left{
     width: 20%;
-    background-color: yellow;
+    background-color: #8a5183c5;
 }
 .footer-center{
-    border:15px solid green;
-    background-color: red;
+    border:15px;
+    background-color: #8a5183c5;
     text-align: left;
     width: 35%;
 }
 .footer-right{
-    padding-bottom: 50px;
-    background-color: cadetblue;
+    margin-top:1em;
+    
+    background-color: #8a5183c5;
     width: 45%;
     text-align: left;
     font-size: 25px;
-    
+    margin-right: 1.3em;
+    padding-right: 1.3em;
 }
-
 .footerlinks{
 
     display: inline-block;
     color: #fadcaa;
     text-decoration: none;
-
+    font-size: large;
 }
-
+.margen{
+    line-height: 1.6;
+}*/
 /*Links characteristics*/
-
-a:link{
+a:link, a:visited{
     color: #fadcaa;
     text-decoration: none;
+
 }
 
-a:visited {
-    color: #fadcaa;
-    text-decoration: none;
-}
-  
-a:hover {
-    
-    text-decoration: none;
-}
-  
-a:active {
+a:active, a:hover{
+    color: #b2deec;
     text-decoration: underline;
 }
 
-ul{
+/*
+.Copy{
+    color: #fadcaa;
+    font-style: italic;
+    font-size: small;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30%;
+    bottom:0;
 
-    list-style-position: unset;
+}*/
+
+.colorTema{
+    color:var(--colorTema);
+}
+
+.colorSecundario{
+    background-color: var(--colorSecundario) !important;
+}
+
+.center{
+    text-align:center;
+    margin:auto;
+    
+
+}
+
+.SecondaryTitles{
+    color: #e4dede;
+    background-color: #8675a9ce;
+    text-align: left;
+    font-family: monospace;
+    width: fit-content;
+    padding: 5px;
+    border: 7px;
+    border-style: solid;
+    border-color: #8a518369;
+
+}
+
+.textmargin{
+    margin-left: 2em;
+}
+
+.textbox{
+    background-color: #8675a9e3;
+    width: 40%;
+    overflow:hidden;
+    margin: 10px;
+    clear:both;
+    float: left;
+    padding: 10px;
+    border: 10px solid #8a518333;
+    
+}
+
+.textright{
+    margin-left: 50%;
+
+}
+
+.normalsize{
+    font-size: large;
+    
+}
+
+.colortexto{
+    color:var(--colorTexto);
+    
+}
+
+.border{
+    border: 10px solid #8a518369;
+    background-color: #8a518369;
 }
