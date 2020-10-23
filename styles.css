@@ -71,7 +71,10 @@ footer
 
 }
 
+/*Links characteristics*/
+
 a:link{
+    color: #fadcaa;
     text-decoration: none;
 }
 
