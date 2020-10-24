@@ -28,20 +28,23 @@ main {
     flex: 1 0 auto;
 }
 
+/*Button // Botón*/
 button{
-    background-color: rgba(255, 255, 255, 0);
-    color:  rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0) !important;
     width: fit-content;
     height: fit-content;
     position: fixed;
     bottom: 10%;
     right: 1%;
     border: 0;
+    border-radius: 100%;
+
 }
+
 button:visited, button:active, button:hover{
-    background-color:  rgba(255, 255, 255, 0);
-    color:rgba(255, 255, 255, 0);
+    background-color:  rgba(255, 255, 255, 0) !important;
 }
+/* End Button // Fin Botón*/
 
 /* Intento de footer */
 /*
@@ -172,16 +175,16 @@ a:active, a:hover
 .title{
     /* Title */
     font-family:monospace;
-    font-size: 30px;
+    font-size: 1.875em;
     color: var(--colorTema);
     text-align: center;
     /*Caja*/
     background-color: #794c74;
-    width: 500px;
+    width: 20.250em;
     border-color: var(--colorSecundario);
-    border-width: 8px;
+    border-width: 0.500em;
     border-style: solid;
-    padding: 30px;
+    padding:1em;
     margin:auto;
     margin-top: 1em;
 }
@@ -234,10 +237,6 @@ a:active, a:hover
 {
     border: 10px solid var(--colorTerciario);
     background-color: var(--colorTerciario);
-}
-
-.shadow{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /*Fin No sé en que categoría ponerlo // Otros // End Others*/
