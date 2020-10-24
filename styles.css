@@ -3,7 +3,9 @@
 :root{
     --colorTema:#fadcaa;
     --colorSecundario: #8a5183c5;
-    --colorTexto: #f5f5f5 ;
+    --colorTexto: #f5f5f5;
+    --colorBoxes: #8675a9e3;
+    --colorTerciario: #8a518369;
 }
 
 body{ 
@@ -26,24 +28,22 @@ main {
     flex: 1 0 auto;
 }
 
-.title{
-    /* Title */
-    font-family:monospace;
-    font-size: 30px;
-    color: var(--colorTema);
-    text-align: center;
-    /*Caja*/
-    background-color: #794c74;
-    width: 500px;
-    border-color: #8a5183c5;
-    border-width: 8px;
-    border-style: solid;
-    padding: 30px;
-    margin:auto;
-    margin-top: 1em;
+button{
+    background-color: rgba(255, 255, 255, 0);
+    color:  rgba(255, 255, 255, 0);
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
+    border: 0;
+}
+button:visited, button:active, button:hover{
+    background-color:  rgba(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 0);
 }
 
-/* Mierda de footer */
+/* Intento de footer */
 /*
 footer{
     position: fixed;
@@ -87,18 +87,21 @@ footer{
 .margen{
     line-height: 1.6;
 }*/
-/*Links characteristics*/
-a:link, a:visited{
-    color: #fadcaa;
+
+/*Links characteristics // Características*/
+a:link, a:visited
+{
+    color:var(--colorTema);
     text-decoration: none;
 
 }
 
-a:active, a:hover{
+a:active, a:hover
+{
     color: #b2deec;
     text-decoration: underline;
 }
-
+/*End Links characteristics // Características*/
 /*
 .Copy{
     color: #fadcaa;
@@ -110,19 +113,77 @@ a:active, a:hover{
 
 }*/
 
-.colorTema{
+/*Colors // Colores*/
+.colorTema
+{
     color:var(--colorTema);
 }
 
-.colorSecundario{
+.colorSecundario
+{
     background-color: var(--colorSecundario) !important;
 }
 
-.center{
+.colortexto
+{
+    color:var(--colorTexto);
+    
+}
+
+.colorBoxes
+{
+    background-color: var(--colorBoxes);
+}
+
+.colorTerciario
+{
+    color:var(--colorTerciario);
+}
+
+/*End Colors // Fin Colores*/
+
+/*Alignment // Margin // Posición // Margen*/
+.center
+{
     text-align:center;
     margin:auto;
-    
+}
 
+.right
+{
+    text-align: right;
+    margin-left:auto;
+    margin-right: 1%;
+}
+
+.textmargin
+{
+    margin-left: 2em;
+}
+
+.textright
+{
+    margin-left: 50%;
+}
+/*End Alignment // Margin // Posición // Margen*/
+
+/*Headers, titles, títulos*/
+
+.title{
+    /* Title */
+    font-family:monospace;
+    font-size: 30px;
+    color: var(--colorTema);
+    text-align: center;
+    /*Caja*/
+    background-color: #794c74;
+    width: 500px;
+    border-color: var(--colorSecundario);
+    border-width: 8px;
+    border-style: solid;
+    padding: 30px;
+    margin:auto;
+    margin-top: 1em;
 }
 
 .SecondaryTitles{
@@ -134,16 +195,13 @@ a:active, a:hover{
     padding: 5px;
     border: 7px;
     border-style: solid;
-    border-color: #8a518369;
+    border-color: var(--colorTerciario);
 
 }
 
-.textmargin{
-    margin-left: 2em;
-}
-
+/*Containers*/
 .textbox{
-    background-color: #8675a9e3;
+    background-color: var(--colorBoxes);
     width: 40%;
     overflow:hidden;
     margin: 10px;
@@ -153,23 +211,33 @@ a:active, a:hover{
     border: 10px solid #8a518333;
     
 }
+/*End Containers*/
 
-.textright{
-    margin-left: 50%;
-
-}
-
+/*Text // Texto*/
 .normalsize{
     font-size: large;
-    
+}
+/*End Text // Fin texto*/
+
+/*Size // Tamaño*/
+
+.logo
+{
+    width: fit-content;
+    height: fit-content;
 }
 
-.colortexto{
-    color:var(--colorTexto);
-    
+/*End Size // Fin Tamaño*/
+
+/*No sé en que categoría ponerlo // Otros // Others*/
+.border
+{
+    border: 10px solid var(--colorTerciario);
+    background-color: var(--colorTerciario);
 }
 
-.border{
-    border: 10px solid #8a518369;
-    background-color: #8a518369;
+.shadow{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+/*Fin No sé en que categoría ponerlo // Otros // End Others*/
