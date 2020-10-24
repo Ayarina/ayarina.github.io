@@ -8,7 +8,7 @@
 
 body{ 
     /* Background Image Characteristics */
-    background-image:url(pokemongif.gif);
+    background-image:url(media/pokemongif.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
