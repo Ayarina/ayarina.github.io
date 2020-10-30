@@ -204,6 +204,7 @@ a:active, a:hover
     border: 7px;
     border-style: solid;
     border-color: var(--colorTerciario);
+    margin-top: 15px; 
 
 }
 
