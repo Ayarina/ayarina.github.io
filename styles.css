@@ -29,7 +29,7 @@ main {
 }
 
 /*Button // Botón*/
-button{
+.button{
     background-color: rgba(255, 255, 255, 0) !important;
     width: fit-content;
     height: fit-content;
@@ -37,12 +37,16 @@ button{
     bottom: 10%;
     right: 1%;
     border: 0;
-    border-radius: 100%;
+    border-radius: 15%;
 
 }
 
-button:visited, button:active, button:hover{
-    background-color:  rgba(255, 255, 255, 0) !important;
+button:visited{
+    background-color: var(--colorBoxes) !important;
+}
+
+button:hover, button:active{
+    background-color: var(--colorSecundario) !important;
 }
 /* End Button // Fin Botón*/
 
@@ -168,6 +172,7 @@ a:active, a:hover
 {
     margin-left: 50%;
 }
+
 /*End Alignment // Margin // Posición // Margen*/
 
 /*Headers, titles, títulos*/
@@ -214,6 +219,17 @@ a:active, a:hover
     border: 10px solid #8a518333;
     
 }
+
+.bigbox{
+    background-color: var(--colorBoxes);
+    overflow:hidden;
+    margin: 10px;
+    clear:both;
+    float: left;
+    padding: 10px;
+    border: 10px solid #8a518333;
+    display: flex;
+}
 /*End Containers*/
 
 /*Text // Texto*/
@@ -239,4 +255,15 @@ a:active, a:hover
     background-color: var(--colorTerciario);
 }
 
+.catbutton{
+    background-color:var(--colorTerciario) !important;
+    padding: 10;
+    border-radius: none;
+    border-color: var(--colorTerciario);
+   
+}
+
+.vacio{
+    padding: 0;   
+}
 /*Fin No sé en que categoría ponerlo // Otros // End Others*/
