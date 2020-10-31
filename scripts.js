@@ -30,5 +30,3 @@ function getStars(){
 
 
 //Página CatApi: https://docs.thecatapi.com/
-
-//Añadir audio y demás apis
