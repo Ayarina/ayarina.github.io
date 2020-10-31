@@ -19,4 +19,16 @@ function getNekos(){
     });
 }
 
+//API Repository Starring
+function getStars(){
+    $.get("https://api.github.com/repos/Ayarina/ayarina.github.io", function(data, status){
+        
+        document.getElementById("stars").innerHTML = data['stargazers_count'];
+        console.log(data.stargazers_count);
+    });
+}
+
+
 //Página CatApi: https://docs.thecatapi.com/
+
+//Añadir audio y demás apis
